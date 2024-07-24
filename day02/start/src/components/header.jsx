@@ -18,3 +18,5 @@ const Header = (props) => {
 
 }
 export default Header
+
+//나의 미션 작성 버튼을 누르면 content가 작성 ui로 바뀌도록 만들어야한다
