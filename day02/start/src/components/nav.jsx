@@ -15,8 +15,8 @@ const Nav = ({ Topics, setSelectId }) => {
             {Topics.map(to => (
                 <li key={to.id}>
                     {to.title}
-                    {to.body}
-                    <button onClick={() => idAlert(to.id)}>id걊alert</button>
+
+                    <button onClick={() => idAlert(to.id)}>id</button>
                     <button onClick={() => SubContent(to.id)}>설명</button>
                 </li>
             ))}

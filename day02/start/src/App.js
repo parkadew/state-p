@@ -9,13 +9,13 @@ import Create from './components/create';
 function App() {
 
   const [Topics, setTopics] = useState([{
-    id: 1, title: 'html', body: 'html is..', subtitle: 'html이 무엇이냐', content: 'html 이란',
+    id: 1, title: 'html', body: 'html is..'
   },
   {
-    id: 2, title: 'css', body: 'css is..', subtitle: 'css가 무엇이냐', content: 'css란',
+    id: 2, title: 'css', body: 'css is..'
   },
   {
-    id: 3, title: 'react', body: 'react is..', subtitle: 'React가 무엇이냐', content: 'React란',
+    id: 3, title: 'react', body: 'react is..'
   },
   ])
 
@@ -33,7 +33,7 @@ function App() {
       {SelcetId && < Article Topics={Topics} SelcetId={SelcetId} setSelectId={setSelectId}></Article>}
       <hr></hr>
       <button onClick={openCreatemode}>Create</button>
-      {isChangeCreateMode && <Create Topics={Topics} setTopics={setTopics} />}
+      {isChangeCreateMode && <Create Topics={Topics} setTopics={setTopics} setChangeCreateMode={setChangeCreateMode} setSelectId={setSelectId} />}
     </div >
 
   );

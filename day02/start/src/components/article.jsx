@@ -9,8 +9,8 @@ const Article = ({ Topics, SelcetId, setSelectId }) => {
 
     return (
         <>
-            <h2>{SelectTopic.subtitle}</h2>
-            <p>{SelectTopic.content}</p>
+            <h2>{SelectTopic.title}</h2>
+            <p>{SelectTopic.body}</p>
             <button onClick={onclickClose}>닫기</button>
         </>
 
